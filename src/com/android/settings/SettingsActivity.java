@@ -288,7 +288,8 @@ public class SettingsActivity extends Activity
             R.id.dashboard,
             R.id.custom_settings,
             R.id.bitsyko_layers,
-            R.id.supersu_settings
+            R.id.supersu_settings,
+            R.id.kernel_adiutor
     };
 
     private static final String[] ENTRY_FRAGMENTS = {
@@ -1325,6 +1326,15 @@ public class SettingsActivity extends Activity
                     boolean supported = false;
                     try {
                         supported = (getPackageManager().getPackageInfo("com.lovejoy777.rroandlayersmanager", 0).versionCode > 0);
+                    } catch (PackageManager.NameNotFoundException e) {
+                    }
+                    if (!supported) {
+                        removeTile = true;
+                    }
+                } else if (id == R.id.kernel_adiutor) {
+                    boolean supported = false;
+                    try {
+                        supported = (getPackageManager().getPackageInfo("com.grarak.kerneladiutor", 0).versionCode > 0);
                     } catch (PackageManager.NameNotFoundException e) {
                     }
                     if (!supported) {

@@ -106,6 +106,17 @@
                 android:targetClass="projekt.substratum.LaunchActivity" />
         </dashboard-tile>
 
+        <!-- Kernel Adiutor -->
+        <dashboard-tile
+                android:id="@+id/kernel_adiutor"
+                android:icon="@drawable/ic_settings_kernel_adiutor"
+                android:title="@string/kernel_settings_title">
+                <intent
+                    android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.grarak.kerneladiutor"
+                    android:targetClass="com.grarak.kerneladiutor.MainActivity" />
+        </dashboard-tile>
+
         <!-- SuperSU -->
         <dashboard-tile
                 android:id="@+id/supersu_settings"
