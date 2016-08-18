@@ -31,6 +31,7 @@
   <!-- Dashboard -->
     <string name="header_category_custom">Rom Control</string>
     <string name="supersu_title">SuperSU</string>
+    <string name="phh_superuser_title">Super User</string>
     <string name="custom_settings_title">PureNexus Settings</string>
     <string name="bitsyko_layers">Layers Manager</string>
     <string name="kernel_settings_title">Kernel Settings</string>

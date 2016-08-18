@@ -128,6 +128,17 @@
                     android:targetClass="eu.chainfire.supersu.MainActivity" />
         </dashboard-tile>
 
+        <!-- phh Superuser -->
+        <dashboard-tile
+                android:id="@+id/phh_superuser_settings"
+                android:icon="@drawable/ic_settings_supersu"
+                android:title="@string/phh_superuser_title">
+                <intent
+                    android:action="android.intent.action.MAIN"
+                    android:targetPackage="me.phh.superuser"
+                    android:targetClass="com.koushikdutta.superuser.MainActivity" />
+        </dashboard-tile>
+
     </dashboard-category>
 
     <!-- DEVICE -->
